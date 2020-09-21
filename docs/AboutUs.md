@@ -37,15 +37,15 @@ We are a team based in the [School of Computing, National University of Singapor
 * Role: Team lead
 * Responsibilities: Commons
 
-### Jean Doe
+### Shawn Ng Yong Kwang
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/shawn-nyk.png" width="200px">
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/shawn-nyk)]
+[[portfolio](team/shawn-nyk.md)]
 
 * Role: Developer
-* Responsibilities: Dev Ops + Threading
+* Responsibilities: Model
 
 ### James Doe
 

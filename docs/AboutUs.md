@@ -47,12 +47,12 @@ We are a team based in the [School of Computing, National University of Singapor
 * Role: Developer
 * Responsibilities: Model
 
-### James Doe
+### Fidella Widjojo
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/zoroarkdarkrai.png" width="200px">
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/zoroarkdarkrai)]
+[[portfolio](team/zoroarkdarkrai.md)]
 
 * Role: Developer
-* Responsibilities: UI
+* Responsibilities: Storage

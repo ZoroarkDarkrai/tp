@@ -1,4 +1,7 @@
-# Keane Chan Jun Yu - Project Portfolio
+---
+layout: page
+title: Keane Chan Jun Yu - Project Portfolio
+---
 
 ## Project: InternHunter
 

@@ -1,4 +1,7 @@
-# Shawn Ng Yong Kwang - Project Portfolio
+---
+layout: page
+title: Shawn Ng Yong Kwang - Project Portfolio
+---
 
 ## Project: InternHunter
 

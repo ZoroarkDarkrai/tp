@@ -1,4 +1,7 @@
-# Fidella Widjojo - Project Portfolio
+---
+layout: page
+title: Fidella Widjojo - Project Portfolio
+---
 
 ## Project: InternHunter
 

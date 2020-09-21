@@ -1,4 +1,7 @@
-# Gan Wan Cheng Isaac- Project Portfolio
+---
+layout: page
+title: Gan Wan Cheng Isaac - Project Portfolio
+---
 
 ## Project: InternHunter
 

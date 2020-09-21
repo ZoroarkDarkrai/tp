@@ -1,4 +1,7 @@
-# About Us
+---
+layout: page
+title: About Us
+---
 
 AddressBook - Level 3 was developed by the se-edu team. Our team was tasked to build on top of this project to morph
 it to something new! We chose to build a internship hunting application, InternHunter,

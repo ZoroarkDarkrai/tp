@@ -1,4 +1,7 @@
-# Lum Jian Yang Sean - Project Portfolio
+---
+layout: page
+title: Lum Jian Yang Sean - Project Portfolio
+---
 
 ## Project: InternHunter
 

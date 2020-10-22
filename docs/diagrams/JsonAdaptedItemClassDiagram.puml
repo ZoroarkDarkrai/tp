@@ -4,8 +4,11 @@ skinparam arrowThickness 1
 skinparam arrowColor STORAGE_COLOR_T2
 skinparam classBackgroundColor STORAGE_COLOR
 skinparam classAttributeFontColor #FFFFFF
+skinparam classAttributeIconSize 0
 
-abstract Class JsonAdaptedItem {
+!define ABSTRACT &#123;abstract&#125;
+
+Class "ABSTRACT\nJsonAdaptedItem" as JsonAdaptedItem {
     + Item toModelType()
 }
 

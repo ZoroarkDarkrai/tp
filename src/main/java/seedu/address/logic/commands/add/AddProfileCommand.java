@@ -11,6 +11,7 @@ import static seedu.address.model.util.ItemUtil.PROFILE_ALIAS;
 import static seedu.address.model.util.ItemUtil.PROFILE_ITEM_NAME;
 import static seedu.address.model.util.ItemUtil.PROFILE_NAME;
 
+import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.CommandResult;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
@@ -54,9 +55,19 @@ public class AddProfileCommand extends AddCommandAbstract {
         }
 
         model.addProfileItem(toAdd);
-
+        setProfileViewIndex(model);
         String addSuccessMessage = String.format(MESSAGE_ADD_SUCCESS, PROFILE_NAME, toAdd);
         return getCommandResult(model, addSuccessMessage, TabName.PROFILE);
+    }
+
+    /**
+     * Sets the profile view index to the newly added profile.
+     *
+     * @param model {@code Model} which the command should operate on.
+     */
+    private void setProfileViewIndex(Model model) {
+        int size = model.getFilteredProfileListSize();
+        model.setProfileViewIndex(Index.fromOneBased(size));
     }
 
     @Override

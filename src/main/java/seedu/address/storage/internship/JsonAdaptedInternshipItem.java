@@ -49,10 +49,10 @@ public class JsonAdaptedInternshipItem extends JsonAdaptedItem {
      */
     public JsonAdaptedInternshipItem(InternshipItem source) {
         assert source != null : JsonAdaptedItem.NULL_SOURCE_ERROR_MESSAGE;
-        companyName = source.getCompanyName().getValue();
-        jobTitle = source.getJobTitle().getValue();
-        period = source.getPeriod().getValue();
-        wage = source.getWage().getValue();
+        companyName = source.getCompanyNameValue();
+        jobTitle = source.getJobTitleValue();
+        period = source.getPeriodValue();
+        wage = source.getWageValue();
         requirements.addAll(source.getRequirements().stream()
                 .map(JsonAdaptedRequirement::new)
                 .collect(Collectors.toList()));

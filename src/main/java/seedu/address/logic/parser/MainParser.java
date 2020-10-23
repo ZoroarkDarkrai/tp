@@ -18,7 +18,7 @@ import seedu.address.logic.commands.edit.EditCommand;
 import seedu.address.logic.commands.find.FindCommand;
 import seedu.address.logic.commands.list.ListCommand;
 import seedu.address.logic.commands.view.ViewCommand;
-import seedu.address.logic.parser.add.AddCommandParserWrapper;
+import seedu.address.logic.parser.add.AddCommandParser;
 import seedu.address.logic.parser.delete.DeleteCommandParser;
 import seedu.address.logic.parser.edit.EditCommandParser;
 import seedu.address.logic.parser.exceptions.ParseException;
@@ -56,7 +56,7 @@ public class MainParser {
         final String arguments = matcher.group(ARGUMENTS);
         switch (commandWord) {
         case AddCommand.COMMAND_WORD:
-            return new AddCommandParserWrapper().parse(arguments);
+            return new AddCommandParser().parse(arguments);
         case DeleteCommand.COMMAND_WORD:
             return new DeleteCommandParser().parse(arguments);
         case EditCommand.COMMAND_WORD:

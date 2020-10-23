@@ -40,7 +40,7 @@ public class JsonAdaptedProfileItem extends JsonAdaptedItem {
      */
     public JsonAdaptedProfileItem(ProfileItem source) {
         assert source != null : JsonAdaptedItem.NULL_SOURCE_ERROR_MESSAGE;
-        title = source.getTitle().getValue();
+        title = source.getTitleValue();
         profileType = source.getCategory().toString();
         descriptors.addAll(source.getDescriptors().stream()
                 .map(JsonAdaptedDescriptor::new)

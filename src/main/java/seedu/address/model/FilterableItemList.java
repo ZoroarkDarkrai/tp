@@ -70,4 +70,7 @@ public interface FilterableItemList<T extends Item> {
      * @throws NullPointerException if {@code predicate} is null.
      */
     void updateFilteredItemList(Predicate<? super T> predicate);
+
+    /** Retrieves the size of the list. */
+    int getSize();
 }

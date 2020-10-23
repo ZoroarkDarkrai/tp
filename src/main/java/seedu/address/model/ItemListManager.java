@@ -72,8 +72,8 @@ public class ItemListManager<T extends Item> implements FilterableItemList<T> {
     @Override
     public void setItem(T target, T editedItem) {
         requireAllNonNull(target, editedItem);
-
         itemList.setItem(target, editedItem);
+        updateFilteredItemList(PREDICATE_SHOW_ALL_ITEMS);
     }
 
     //=========== Filtered Item List Accessors =============================================================
@@ -85,6 +85,16 @@ public class ItemListManager<T extends Item> implements FilterableItemList<T> {
     @Override
     public ObservableList<T> getFilteredItemList() {
         return filteredItems;
+    }
+
+    /**
+     * Retrieves the size of the filterable item list.
+     *
+     * @return the size of the filterable item list.
+     */
+    @Override
+    public int getSize() {
+        return filteredItems.size();
     }
 
     /**

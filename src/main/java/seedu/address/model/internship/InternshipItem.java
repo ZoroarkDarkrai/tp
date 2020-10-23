@@ -1,5 +1,6 @@
 package seedu.address.model.internship;
 
+import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 import static seedu.address.model.util.InternshipItemUtil.COMPANY_OUTPUT_NAME;
 import static seedu.address.model.util.InternshipItemUtil.PERIOD_OUTPUT_NAME;
@@ -77,6 +78,7 @@ public class InternshipItem extends Item {
      * @param companyName Company name to set.
      */
     public void setCompanyName(CompanyName companyName) {
+        requireNonNull(companyName);
         this.companyName = companyName;
     }
 
@@ -99,6 +101,7 @@ public class InternshipItem extends Item {
      * @param jobTitle Job title to set.
      */
     public void setJobTitle(JobTitle jobTitle) {
+        requireNonNull(jobTitle);
         this.jobTitle = jobTitle;
     }
 
@@ -121,6 +124,7 @@ public class InternshipItem extends Item {
      * @param period Job title to set.
      */
     public void setPeriod(Period period) {
+        requireNonNull(period);
         this.period = period;
     }
 
@@ -143,6 +147,7 @@ public class InternshipItem extends Item {
      * @param wage Wage to set.
      */
     public void setWage(Wage wage) {
+        requireNonNull(wage);
         this.wage = wage;
     }
 
@@ -162,6 +167,7 @@ public class InternshipItem extends Item {
      * @param requirements Requirements to set.
      */
     public void setRequirements(Set<Requirement> requirements) {
+        requireNonNull(requirements);
         this.requirements = requirements;
     }
 

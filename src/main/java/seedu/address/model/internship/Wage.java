@@ -22,7 +22,7 @@ public class Wage {
      */
     public Wage(String wage) {
         requireNonNull(wage);
-        checkArgument(isValidWage(wage));
+        checkArgument(isValidWage(wage), MESSAGE_CONSTRAINTS);
         value = wage;
     }
 

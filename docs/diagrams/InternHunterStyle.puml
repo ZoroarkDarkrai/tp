@@ -38,6 +38,8 @@ skinparam BackgroundColor #FFFFFFF
 
 skinparam Shadowing false
 
+skinparam classAttributeIconSize 0
+
 skinparam Class {
     FontColor #FFFFFF
     BorderThickness 1

@@ -12,6 +12,7 @@ import static seedu.address.logic.parser.clisyntax.CompanyCliSyntax.PREFIX_PHONE
 import static seedu.address.model.util.ItemUtil.COMPANY_ALIAS;
 import static seedu.address.model.util.ItemUtil.COMPANY_NAME;
 
+import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.CommandResult;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
@@ -58,9 +59,19 @@ public class AddCompanyCommand extends AddCommandAbstract {
         }
 
         model.addCompany(toAdd);
-
+        setCompanyViewIndex(model);
         String addSuccessMessage = String.format(MESSAGE_ADD_SUCCESS, COMPANY_NAME, toAdd);
         return getCommandResult(model, addSuccessMessage, TabName.COMPANY);
+    }
+
+    /**
+     * Sets the company view index to the newly added company.
+     *
+     * @param model {@code Model} which the command should operate on.
+     */
+    private void setCompanyViewIndex(Model model) {
+        int size = model.getFilteredCompanyListSize();
+        model.setCompanyViewIndex(Index.fromOneBased(size));
     }
 
     @Override

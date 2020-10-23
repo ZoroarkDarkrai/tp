@@ -8,7 +8,6 @@ import static seedu.address.logic.commands.util.CommandUtil.getProfileItem;
 import static seedu.address.logic.parser.clisyntax.ProfileCliSyntax.PREFIX_CATEGORY;
 import static seedu.address.logic.parser.clisyntax.ProfileCliSyntax.PREFIX_DESCRIPTOR;
 import static seedu.address.logic.parser.clisyntax.ProfileCliSyntax.PREFIX_TITLE;
-import static seedu.address.model.FilterableItemList.PREDICATE_SHOW_ALL_ITEMS;
 import static seedu.address.model.util.ItemUtil.PROFILE_ALIAS;
 import static seedu.address.model.util.ItemUtil.PROFILE_ITEM_NAME;
 import static seedu.address.model.util.ItemUtil.PROFILE_NAME;
@@ -73,7 +72,7 @@ public class EditProfileCommand extends EditCommandAbstract {
         }
 
         model.setProfileItem(profileItemToEdit, editedProfileItem);
-        model.updateFilteredProfileList(PREDICATE_SHOW_ALL_ITEMS);
+        model.setProfileViewIndex(targetIndex);
         String editSuccessMessage = String.format(MESSAGE_EDIT_SUCCESS, PROFILE_NAME, editedProfileItem);
         return getCommandResult(model, editSuccessMessage, TabName.PROFILE);
     }

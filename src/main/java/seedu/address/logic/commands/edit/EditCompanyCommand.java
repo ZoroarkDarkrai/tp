@@ -9,7 +9,6 @@ import static seedu.address.logic.parser.clisyntax.CompanyCliSyntax.PREFIX_COMPA
 import static seedu.address.logic.parser.clisyntax.CompanyCliSyntax.PREFIX_EMAIL;
 import static seedu.address.logic.parser.clisyntax.CompanyCliSyntax.PREFIX_INDUSTRY;
 import static seedu.address.logic.parser.clisyntax.CompanyCliSyntax.PREFIX_PHONE;
-import static seedu.address.model.FilterableItemList.PREDICATE_SHOW_ALL_ITEMS;
 import static seedu.address.model.util.ItemUtil.COMPANY_ALIAS;
 import static seedu.address.model.util.ItemUtil.COMPANY_NAME;
 
@@ -80,7 +79,7 @@ public class EditCompanyCommand extends EditCommandAbstract {
         }
 
         model.setCompany(companyToEdit, editedCompany);
-        model.updateFilteredCompanyList(PREDICATE_SHOW_ALL_ITEMS);
+        model.setCompanyViewIndex(index);
         String editSuccessMessage = String.format(MESSAGE_EDIT_SUCCESS, COMPANY_NAME, editedCompany);
         return getCommandResult(model, editSuccessMessage, TabName.COMPANY);
     }
@@ -135,7 +134,8 @@ public class EditCompanyCommand extends EditCommandAbstract {
         private Address address;
         private Set<Industry> industries;
 
-        public EditCompanyDescriptor() {}
+        public EditCompanyDescriptor() {
+        }
 
         /**
          * Copy constructor.

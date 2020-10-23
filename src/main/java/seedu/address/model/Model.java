@@ -270,4 +270,20 @@ public interface Model {
      * Gets ApplicationItem from Filtered Application list.
      */
     ApplicationItem getApplicationItemFromFilteredList(int index);
+
+    /**
+     * Gets the size of the filtered company list.
+     */
+    int getFilteredCompanyListSize();
+
+    /**
+     * Gets the size of the filtered application list.
+     */
+    int getFilteredApplicationListSize();
+
+    /**
+     * Gets the size of the filtered profile list.
+     */
+    int getFilteredProfileListSize();
+
 }

@@ -28,4 +28,5 @@ public class DeleteApplicationCommandParser implements Parser<DeleteApplicationC
         Index index = GeneralParserUtil.parseIndex(args);
         return new DeleteApplicationCommand(index);
     }
+
 }

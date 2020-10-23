@@ -75,9 +75,19 @@ public class AddApplicationCommand extends AddCommandAbstract {
         }
 
         model.addApplication(applicationToAdd);
-
+        setApplicationViewIndex(model);
         String addSuccessMessage = String.format(MESSAGE_ADD_SUCCESS, APPLICATION_NAME, applicationToAdd);
         return getCommandResult(model, addSuccessMessage, TabName.APPLICATION);
+    }
+
+    /**
+     * Sets the application view index to the newly added application.
+     *
+     * @param model {@code Model} which the command should operate on.
+     */
+    private void setApplicationViewIndex(Model model) {
+        int size = model.getFilteredApplicationListSize();
+        model.setApplicationViewIndex(Index.fromOneBased(size));
     }
 
     @Override

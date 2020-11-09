@@ -1,5 +1,5 @@
 title: "InternHunter"
-theme: minima
+theme: jekyll-theme-cayman
 
 header_pages:
   - UserGuide.md

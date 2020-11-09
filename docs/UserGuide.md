@@ -385,7 +385,7 @@ internship in the company’s list of internships.
 * At least one of the optional fields must be provided.
 * Existing values will be updated to the input values.
 * When editing `REQUIREMENTS`, all existing requirements get replaced by the new specified requirements.
-* You can remove all `REQUIREMENTS` by adding r/ without anything after it.
+* You can remove all `REQUIREMENTS` by adding `r/` without anything after it.
 
 Examples:
 - `edit int 3 i/1 j/Frontend Developer`

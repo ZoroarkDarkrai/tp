@@ -29,7 +29,7 @@ It has a GUI created with JavaFX. It is written in Java, and has about 35k LoC.
     * Highlights: `FilterableItemList` and `ItemListManager` work for all classes extending the `Item` class. A list of 
     `Item` objects have many common methods that can lead to much code duplication. Using generic classes ensures InternHunter
     adheres to the DRY principle.
-  * Added exit dialog  (Pull request [\#96](https://github.com/AY2021S1-CS2103T-T15-4/tp/pull/96), [\#101](https://github.com/AY2021S1-CS2103T-T15-4/tp/pull/101))
+  * Added exit dialog  (Pull request [\#96](https://github.com/AY2021S1-CS2103T-c/T15-4/tp/pull/96), [\#101](https://github.com/AY2021S1-CS2103T-T15-4/tp/pull/101))
     * What it does: Prevents users from accidentally quitting InternHunter.
     * Highlights: A confirmation dialog pops up when users click on the "x" button or enter the `exit` command.
   * Added clear command (Pull request [\#221](https://github.com/AY2021S1-CS2103T-T15-4/tp/pull/221))
